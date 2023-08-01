@@ -1,6 +1,4 @@
 import React from 'react'
-import Image from 'next/image'
-import Customers from '../../public/Customers.svg'
 const OrderSummary = () => {
   const orders = [
 

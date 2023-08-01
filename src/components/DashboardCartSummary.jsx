@@ -11,7 +11,7 @@ const DashboardCartSummary = ({icon}) => {
                   </div>
                   <div className="flex justify-start items-center gap-[7px]">
                       <span className="text-neutral-300 text-xs font-normal">This Week</span>
-                      {/* replace this div with your actual icon or image */}
+                    
                       <div className="w-4 h-4 relative" />
                   </div>
               </div>

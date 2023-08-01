@@ -5,7 +5,7 @@ const MainLayout = ({ children }) => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   return (
     <>
-      <div className='flex flex-row bg-green-100 h-screen w-screen overflow-hidden'>
+      <div className='flex flex-row bg-[#EEF0FA] h-screen w-screen overflow-hidden'>
         <aside className={`${isSidebarOpen ? '' : 'hidden'} md:block`}>
           <Sidebar />
         </aside>

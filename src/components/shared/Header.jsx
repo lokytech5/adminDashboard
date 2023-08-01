@@ -16,7 +16,7 @@ const Header = ({ onMenuClick }) => {
                 <HiMenu className='md:hidden' onClick={onMenuClick} />
                 <div className='relative'>
                     <h1 className='mb-2'>Dashboard</h1>
-                    <HiHome />
+                    <HiHome className='bg-indigo-500' />
                 </div>
 
                 <div className='flex items-center gap-2 mr-2'>

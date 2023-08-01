@@ -1,5 +1,4 @@
 import React from 'react'
-import { Bar } from 'react-chartjs-2';
 import { Chart, registerables } from 'chart.js';
 Chart.register(...registerables);
 
@@ -17,7 +16,7 @@ const Charts = () => {
   return (
     <div className="flex space-x-4 flex-col">
       <div className="w-full h-[10px] flex flex-row justify-start items-center gap-[30px] mb-4">
-        {/* Height and width were swapped, layout was changed to row, and margin-bottom was added */}
+      
         <div className="text-gray-400 text-[11px] font-normal">100k</div>
         <div className="text-right text-gray-400 text-[11px] font-normal">80k</div>
         <div className="text-right text-gray-400 text-[11px] font-normal">60k</div>
