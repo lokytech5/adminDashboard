@@ -1,5 +1,5 @@
 import React, { useState, Fragment } from 'react'
-import { HiOutlineBell, HiOutlineChatAlt, HiOutlineSearch } from 'react-icons/hi'
+import { HiOutlineBell } from 'react-icons/hi'
 import { Popover, Transition, Menu } from '@headlessui/react'
 import { HiMenu } from 'react-icons/hi';
 import { HiHome } from 'react-icons/hi';
@@ -8,13 +8,12 @@ import Link from 'next/link';
 import { BiChevronDown } from 'react-icons/bi';
 
 
-
-const Header = () => {
-    const [isOpen, setIsOpen] = useState(false)
+const Header = ({ onMenuClick }) => {
+    
     return (
         <>
             <div className='bg-white h-16 px-4 flex justify-between items-center border-b border-gray-200'>
-
+                <HiMenu className='md:hidden' onClick={onMenuClick} />
                 <div className='relative'>
                     <h1 className='mb-2'>Dashboard</h1>
                     <HiHome />
@@ -27,7 +26,7 @@ const Header = () => {
                                 <Popover.Button
                                     className={classNames(
                                         open && 'bg-gray-100',
-                                        'group inline-flex items-center rounded-sm p-1.5 text-gray-700 hover:text-opacity-100 focus:outline-none active:bg-gray-100 bg-green-300 rounded'
+                                        'group inline-flex items-center rounded-sm p-1.5 text-gray-700 hover:text-opacity-100 focus:outline-none active:bg-gray-100 bg-[#FFCC91] rounded-lg'
                                     )}
                                 >
                                     <span>Nannys Shop</span>

@@ -1,6 +1,6 @@
 import React from 'react'
-import MainLayout from '@/components/shared/MainLayout'
-function orders() {
+
+function customers() {
   return (
     <div>
       <h1>not enough time given to design here </h1>
@@ -9,4 +9,4 @@ function orders() {
   )
 }
 
-export default orders
+export default customers

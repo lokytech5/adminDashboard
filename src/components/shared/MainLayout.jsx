@@ -1,20 +1,20 @@
 import React, { useState } from 'react';
-import Sidebar from '@/components/Sidebar'
-import Header from '@/components/Header'
+import Sidebar from '@/components/shared/Sidebar'
+import Header from '@/components/shared/Header'
 const MainLayout = ({ children }) => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   return (
     <>
-    <div className='flex flex-row bg-green-100 h-screen w-screen overflow-hidden'>
-        <aside className="bg-gold-100">
-          <Sidebar/>
-          </aside>
+      <div className='flex flex-row bg-green-100 h-screen w-screen overflow-hidden'>
+        <aside className={`${isSidebarOpen ? '' : 'hidden'} md:block`}>
+          <Sidebar />
+        </aside>
 
-          <header className='flex-1'>
+        <header className='flex-1'>
           <Header onMenuClick={() => setIsSidebarOpen(!isSidebarOpen)} />
           <div className='p-4'>{children}</div>
-          </header>
-    </div>
+        </header>
+      </div>
     </>
   )
 }
