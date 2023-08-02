@@ -43,6 +43,7 @@ const BarCharts = () => {
         <h2 className="text-lg font-bold">Marketing</h2>
         <div className="relative">
           <button className="focus:outline-none">This week</button>
+
         </div>
       </div>
       <div className="flex justify-between mb-2">
@@ -59,7 +60,7 @@ const BarCharts = () => {
           <p className="text-sm">Retention</p>
         </div>
       </div>
-      <div className="flex-grow flex justify-center items-center">
+      <div className="w-[60%] h-[50%] flex justify-center items-center">
         <Doughnut data={data} options={options} />
       </div>
     </div>

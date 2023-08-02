@@ -1,4 +1,3 @@
-import MainLayout from "@/components/shared/MainLayout";
 import Link from "next/link";
 
 export default function Home() {
